@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 3</title>
+</head>
+<body>
+<script>
+  let numbers = [12,3124,342,342,353,5,124,5,43,412,42,5,12,534,534,521,5,4354,54,543,56,756,423,42,34,234,23,54,5345,36,534,534,5349];
+  let max = numbers[0];
+  let  total = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    total += numbers[i]
+    if (max< numbers[i]){
+        max= numbers[i];
+    }
+  }
+  document.write('Giá trị lớn nhất trong mảng là :'+ max +
+          '<br>' +  " Giá trị trung bình của mảng là : "+ total/numbers.length);
+</script>
+</body>
+</html>

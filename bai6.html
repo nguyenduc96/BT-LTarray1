@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 6</title>
+</head>
+<body>
+<input type="number" id="input" placeholder="Nhập vào số nguyên">
+<button onclick="kiemTra()">Kiểm tra</button>
+<p id="output"></p>
+<script>
+  function kiemTra(){
+    let numbers = [14,3,6,45,75,67,,234,3,645,776,588,52,35,34,745,756,73,543,6,457,56,5,23,534,756,8,678,789];
+    let a = parseInt(document.getElementById('input').value);
+    let text;
+    for (let i = 0; i < numbers.length; i++) {
+      if (a === numbers[i]){
+        text = "Số nguyên " + a + " có trong mảng";
+        break;
+      }
+      else {
+        text = "Số nguyên " + a + " không có trong mảng";
+      }
+
+    }
+    document.getElementById('output').innerHTML = text;
+  }
+
+</script>
+</body>
+</html>

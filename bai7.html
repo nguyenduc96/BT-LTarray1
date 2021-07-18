@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 7</title>
+</head>
+<body>
+<input type="text" id="input" placeholder="Nhập số nguyên">
+<button onclick="ktXoa()">Click</button>
+<script>
+  function ktXoa(){
+    let numbers =[12,34,3,4,534,23,42,54,6,4134,36,234,634];
+    let deletenum = parseInt(document.getElementById('input').value);
+    if (numbers.indexOf(deletenum) != -1){
+      numbers.splice(numbers.indexOf(deletenum),1);
+      numbers.push(0);
+    }
+    console.log(numbers);
+  }
+</script>
+</body>
+</html>

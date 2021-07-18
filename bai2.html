@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<script>
+  let numbers = [12, 23, 34, 45, 56, 123, 78, 43, 32, 21];
+  let max = numbers[0];
+  let index = 0
+  for (let i = 1; i < numbers.length; i++) {
+    if (max < numbers[i]) {
+      max = numbers[i];
+      index = i;
+    }
+  }
+  document.write('Phần tử có giá trị lớn nhất là : ' + max + ' vị trí trong mảng là : ' + index);
+</script>
+</body>
+</html>
